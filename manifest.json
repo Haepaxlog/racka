@@ -1,0 +1,17 @@
+{
+
+  "description": "",
+  "manifest_version": 2,
+  "name": "Racka",
+  "version": "1.0",
+
+  "permissions": [
+	  "activeTab",
+	  "tabs"
+  ],
+
+  "browser_action": {
+	  "default_popup": "dist/index.html"
+  }
+
+}
