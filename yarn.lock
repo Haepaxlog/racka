@@ -9604,10 +9604,24 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-reader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-reader/-/react-reader-1.2.1.tgz#5c4f9e392fd42ded96f89a1cea9fff279676af2e"
+  integrity sha512-E7WGgRacRW0vCRu/Yp7GwJZTfNSPG37m5RRvmC/NlYzNWdsBWCsuxTUQzNsa7DqJRW9fkaXqsaPNo0sqiVrXzg==
+  dependencies:
+    epubjs "^0.3.93"
+    prop-types "^15.8.1"
+    react-swipeable "^7.0.0"
+
 react-refresh@0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.10.0.tgz#2f536c9660c0b9b1d500684d9e52a65e7404f7e3"
   integrity sha512-PgidR3wST3dDYKr6b4pJoqQFpPGNKDSCDx4cZoshjXipw3LzO7mG1My2pwEzz2JVkF+inx3xRpDeQLFQGH/hsQ==
+
+react-swipeable@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-7.0.0.tgz#7a12570ee435d35ac700511de338384aa78d12cd"
+  integrity sha512-NI7KGfQ6gwNFN0Hor3vytYW3iRfMMaivGEuxcADOOfBCx/kqwXE8IfHFxEcxSUkxCYf38COLKYd9EMYZghqaUA==
 
 read-cache@^1.0.0:
   version "1.0.0"
