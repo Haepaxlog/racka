@@ -1,6 +1,13 @@
-import { render, h } from 'preact';
+import { h, render } from 'preact';
+import { FilePicker } from './Components/Filepicker';
 
-render(
-  <div>Hello world</div>,
-  document.getElementById('app')
-);
+const App = () => {
+
+  return(
+    <div className="">
+      <FilePicker></FilePicker>
+    </div>
+  )
+}
+
+render(<App/>, document.body)

@@ -2,9 +2,18 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    resolve: { 
+        alias: { 
+          "react": "preact/compat",
+          "react-dom/test-utils": "preact/test-utils",
+          "react-dom": "preact/compat",     // Must be below test-utils
+          "react/jsx-runtime": "preact/jsx-runtime"
+        },
+      },
     mode: 'production',
     entry: {
-        index: path.resolve(__dirname, 'src/index.js')
+        index: path.resolve(__dirname, 'src/index.js'),
+        popup: path.resolve(__dirname, 'src/popup.js')
     },
     output: {
         filename: '[name].js',
@@ -21,7 +30,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/template.html'),
-            filename: '[name].html'
+            filename: 'index.html',
+            chunks: ["index"]
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src/template.html'),
+            filename: 'popup.html',
+            chunks: ["popup"]
         })
     ],
     devServer: {
@@ -30,5 +45,5 @@ module.exports = {
     },
     compress: true,
     port: 9000,
-  },
+  }
 };
