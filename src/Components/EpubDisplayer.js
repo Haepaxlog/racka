@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import { useState, useRef } from 'preact/hooks'
+import { useState } from 'preact/hooks'
 import { ReactReader } from 'react-reader'
 
 export const EpubDisplayer = (props) => {
