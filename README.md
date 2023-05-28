@@ -1,5 +1,5 @@
 # Racka - Language Learning Tool
-(Racka - some cool sheep @https://en.wikipedia.org/wiki/Racka)
+(/rɑːtskɑː/ - some cool sheep @https://en.wikipedia.org/wiki/Racka)
 
 ![Racka Logo](./icons/racka_logo.png)
 
