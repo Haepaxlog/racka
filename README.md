@@ -28,12 +28,12 @@ Navigate to `about:debugging` and load it in as a Temporary Add-On:
 Alternatively, if you're not stuck on a Container or VM, just do this via web-ext after building:
 
 ```bash
-$ yarn run web-ext
+$ yarn run dev
 ```
 Or if you just want a hot-reloadable preview of the main App:
 
 ```bash
-$ yarn run dev
+$ yarn run preview
 ```
 
 ### Notice
