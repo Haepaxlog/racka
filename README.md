@@ -40,4 +40,4 @@ $ yarn run preview
 This project came to life, because modern language-learning tools are mostly lackluster. They either need to gamify the whole ordeal and you gain no insight into how your target language actually works, or (something every language-learning tool suffers under) they are only usable for languages that are studied en masse, like French, Spanish, Japanese. This is why this project aims to focus more on suppporting languages that are studied less frequently (e.g Hungarian, Romanian, Slovak, ..., and many more)
 
 ### Contributing
-As this isn't targetted to be commercially viable and aims to be a tool for everyone who is interested, feel free to contribute freely :D
+As this isn't targeted to be commercially viable and aims to be a tool for everyone who is interested, feel free to contribute at will :D
