@@ -3,9 +3,16 @@ import { searchWord } from '../lib/wiktionaryReq'
 import { signal } from '@preact/signals'
 import { useState, useEffect } from 'preact/hooks'
 
+import type { FunctionComponent } from 'preact'
+
+interface WordInfoDisplayerProps {
+    word: string,
+    lang: string
+}
+
 const data = signal(null)
 
-export const WordInfoDisplayer = (props) => {
+export const WordInfoDisplayer: FunctionComponent<WordInfoDisplayerProps> = (props) => {
     const [isClicked, setClicked] = useState(false)
 
     useEffect(() => {
@@ -22,7 +29,7 @@ export const WordInfoDisplayer = (props) => {
     return isClicked
         ? (
             <Fragment>
-                <div onclick={() => setClicked(false)} className="absolute w-6 h-6 bg-white">
+                <div onClick={() => setClicked(false)} className="absolute w-6 h-6 bg-white">
                     <span>{data.value["word"]}</span>
                     <span>{data.value["lang"]}</span>
                     <div>
@@ -42,7 +49,7 @@ export const WordInfoDisplayer = (props) => {
                 </div>
             </Fragment>
         )
-        : (<div onclick={() => {
+        : (<div onClick={() => {
             if (data.value != null) {
                 setClicked(true)
             }

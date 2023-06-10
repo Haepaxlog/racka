@@ -9,11 +9,12 @@ module.exports = {
           "react-dom": "preact/compat",     // Must be below test-utils
           "react/jsx-runtime": "preact/jsx-runtime"
         },
+        extensions: ['.tsx', '.ts', '.js']
       },
     mode: 'production',
     entry: {
-        index: path.resolve(__dirname, 'src/index.js'),
-        popup: path.resolve(__dirname, 'src/popup.js')
+        index: path.resolve(__dirname, 'src/index.tsx'),
+        popup: path.resolve(__dirname, 'src/popup.tsx')
     },
     output: {
         filename: '[name].js',
@@ -22,9 +23,9 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(js|jsx)$/,
+            test: /\.(js|jsx|ts|tsx)$/,
             exclude: /node_modules/,
-            use: ['babel-loader'],
+            use: ['ts-loader'],
         }, ],
     },
     plugins: [

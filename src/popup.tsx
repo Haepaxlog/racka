@@ -1,6 +1,10 @@
 import { h, render } from 'preact'
 
-const PopUp = () => {
+import type { FunctionComponent } from 'preact'
+
+interface PopUpProps {}
+
+const PopUp: FunctionComponent<PopUpProps> = () => {
   return(
     <div className="flex flex-col gap-2 p-4 bg-timberwolf">
     <span>Racka</span>

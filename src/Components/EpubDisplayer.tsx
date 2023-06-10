@@ -2,7 +2,14 @@ import { h } from 'preact'
 import { useState } from 'preact/hooks'
 import { ReactReader } from 'react-reader'
 
-export const EpubDisplayer = (props) => {
+import type { FunctionComponent } from 'preact'
+
+interface EpubDisplayerProps {
+  url: string,
+  renditionRef: any
+}
+
+export const EpubDisplayer: FunctionComponent<EpubDisplayerProps> = (props) => {
   const [location, setLocation] = useState(null)
   const locationChanged = epubcifi => {
     // epubcifi is a internal string used by epubjs to point to a location in an epub. It looks like this: epubcfi(/6/6[titlepage]!/4/2/12[pgepubid00003]/3:0)
