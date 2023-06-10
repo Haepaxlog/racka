@@ -14,8 +14,8 @@
     "lint": "eslint src",
     "web-ext": "web-ext run",
     "dev": "run-s tailwind web-ext",
-    "format:fix": "prettier --write ./src",
-    "format": "prettier --check ./src"
+    "format:fix": "prettier --write --no-semi ./src",
+    "format": "prettier --check --no-semi ./src"
   },
   "eslintConfig": {
     "extends": "preact",

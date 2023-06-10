@@ -1,6 +1,6 @@
-import { h, render } from "preact";
+import { h, render } from "preact"
 
-import type { FunctionComponent } from "preact";
+import type { FunctionComponent } from "preact"
 
 interface PopUpProps {}
 
@@ -18,7 +18,7 @@ const PopUp: FunctionComponent<PopUpProps> = () => {
         Open Reader
       </a>
     </div>
-  );
-};
+  )
+}
 
-render(<PopUp />, document.body);
+render(<PopUp />, document.body)

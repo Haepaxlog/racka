@@ -10,4 +10,4 @@ export const languages = {
   nl: "Dutch",
   hu: "Hungarian",
   it: "Italian",
-};
+}
