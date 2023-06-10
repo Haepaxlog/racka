@@ -1,6 +1,7 @@
-import { h } from "preact"
+import { h, render } from "preact"
 import { useState } from "preact/hooks"
 import { ReactReader } from "react-reader"
+import { WordInfoDisplayer } from "./WordInfoDisplayer"
 
 import type { FunctionComponent } from "preact"
 
@@ -14,6 +15,18 @@ export const EpubDisplayer: FunctionComponent<EpubDisplayerProps> = (props) => {
   const [firstRenderDone, setFirstRenderDone] = useState(false)
 
   const locationChanged = (epubcifi) => {
+    // We are getting the Reference to current rendered view here
+    console.log(
+      "location changed:",
+      props.renditionRef.current.getContents()[0]
+    )
+
+    //let textContent = props.renditionRef.current.getContents()[0]["content"]["innertext"]
+    const rendition = props.renditionRef.current.getContents()[0]["content"]
+
+    // We can render preact into the html
+    // render(<WordInfoDisplayer lang="fr" word="jour"></WordInfoDisplayer>, rendition )
+
     if (!firstRenderDone) {
       setLocation(localStorage.getItem("racka/book-progress"))
       setFirstRenderDone(true)

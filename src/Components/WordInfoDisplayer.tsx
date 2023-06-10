@@ -39,7 +39,7 @@ export const WordInfoDisplayer: FunctionComponent<WordInfoDisplayerProps> = (
               <>
                 <div className="flex flex-col bg-auburn border-2 border-night mt-2 mb-2 p-2">
                   <span>{info["pos"]}</span>
-                  <div className="flex flex-row gap-2">
+                  <div className="flex flex-col">
                     {info["meaning"].map((meaning: string) => {
                       return (
                         <>
